@@ -1,0 +1,185 @@
+---
+title: "titolo<br/>"
+subtitle: "sotto-titolo"
+author: "Autore 1<sup>#</sup>, Autore 2<sup>##</sup>, Autore 3<sup>###</sup>"
+institute: "ARPAV: <sup>#</sup>XXXX, <sup>##</sup>YYYY, <sup>###</sup>ZZZ"
+date: "updated: `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["./css/css_arpav.css", "./css/fonts.css"]
+    lib_dir: libs
+    #self_contained: true # for self contained html, may fail sometimes, though!
+    includes:
+    #  after_body: ./img_layout/timer.html # this is for including timer presentation
+    nature:
+      highlightStyle: github
+      highlightLanguage: ["r", "yaml", "markdown"]
+      highlightLines: true
+      countIncrementalSlides: false
+      #countdown: 60000 # 1 min for each slide
+      ratio: "4:3"
+      #ratio: "16:9" 
+    seal: true    # this is for generating the title (first)slide
+---
+layout: true
+
+background-image: url(./img_layout/logo_arpetta.jpeg)
+background-position: 98% 2%
+background-size: 5%
+
+<!-- set normal layout -->
+
+<!-- set general options and load libraries -->
+
+```{r setup, include=FALSE}
+
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(
+	echo = FALSE,
+	fig.dim=c(5, 5), 
+	out.width="100%",
+	fig.retina = 3,
+	message = FALSE,
+	warning = FALSE
+	)
+
+# here load libraries uncomment accordingly
+
+# library(knitr)
+# library(kableExtra)
+# library(tidyverse)
+# library(scales)
+# library(leaflet)
+# library(mapview)
+# library(raster)
+# library(terra)
+# library(metR)
+# library(patchwork)
+# library(sf)
+# library(ggspatial)
+
+# use scribble
+xaringanExtra::use_scribble(pen_color= "#befa46")
+
+```
+
+---
+
+# titolo 1
+
+testo normale
+
+---
+
+## titolo 2
+
+testo normale
+
+---
+
+### titolo 3
+
+testo normale
+---
+
+# titolo 1
+
+testo normale
+
+## titolo 2
+
+testo normale
+
+### titolo 3
+
+testo normale
+---
+testo normale
+
+.red[testo rosso]
+
+.blue[testo blu]
+
+.green[testo verde]
+
+testo normale .superscript[testo superscript]
+
+testo normale .subscript[testo subscript]
+
+https://maxbre.github.io/
+
+---
+
+.huge[huge]
+
+.big[big]
+
+.large[large]
+
+.small[small]
+
+.tiny[tiny]
+
+.bottomtext[bottomtext]
+
+---
+layout: false
+class: inverse, center, middle, no-scribble
+
+# blank 
+# inverse, center, middle, no scribble
+
+<!-- set inverse layout -->
+---
+layout: true
+
+background-image: url(./img_layout/logo_arpetta.jpeg)
+background-position: 98% 2%
+background-size: 5%
+
+<!-- set normal layout -->
+---
+
+# standard layout again
+
+---
+class: inverse, center, middle, no-scribble
+
+background-image: url("img_pres/cotisso_rosso.jpg")
+background-position: center
+background-size: cover
+
+# image cover
+# inverse, center, middle, no-scribble
+
+---
+layout: true
+
+background-image: url(./img_layout/logo_arpetta.jpeg)
+background-position: 98% 2%
+background-size: 5%
+
+<!-- set normal layout -->
+---
+
+# standard layout again
+
+---
+class: center, middle, no-scribble
+
+background-image: url("img_pres/cotisso_giallo.jpg")
+background-position: center
+background-size: cover
+
+# .white[Grazie per l'attenzione]
+
+## .white[massimo.bressan@arpa.veneto.it]
+
+---
+layout: false
+class: title-slide-final-blank, middle, no-scribble
+
+# Grazie per l'attenzione
+
+## massimo.bressan@arpa.veneto.it
