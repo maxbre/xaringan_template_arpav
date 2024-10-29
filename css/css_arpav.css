@@ -49,6 +49,15 @@ a, a > code {
   color: #fcfcfc;
 }
 
+.inverse_2 {
+  background-color: #386cb0;
+  color: #fcfcfc;
+}
+
+.inverse_2 h1, .inverse h2, .inverse h3 {
+  color: #fcfcfc;
+}
+
 /* ======================= column layout ======================= */
 
 /* Two-column layout (slightly wider for aspect ratio) */
@@ -75,11 +84,13 @@ a, a > code {
 .pull-left {
   float: left;
   width: 47%;
+  text-align: left;
 }
 
 .pull-left-augmented {
   float: left;
-  width: 60%;
+  width: 65%;
+  text-align: left;
 }
 
 .pull-right {
@@ -89,7 +100,7 @@ a, a > code {
 
 .pull-right-reduced {
   float: right;
-  width: 20%;
+  width: 30%;
 }
 
 .pull-right ~ * {
@@ -128,21 +139,52 @@ blockquote {
 
 /* ======================= table ======================= */
 
-/* table adjust horizontal spacing */
+/* table adjust horizontal spacing 
 th, td {
     padding:0 15px 0 15px;
 }
+*/
 
-/* table remove color */
+/* table remove color 
+
 table {
   margin: auto;
   border-top: none;
-  border-bottom: none;
+  border: 1px solid #f2f2f2;
 }
 
-/*table zebra striped*/
-table thead th { border-bottom: none; }
-thead, tfoot, tr:nth-child(even) {background-color: #f2f2f2;}
+*/
+
+/* colors of borders*/
+table, th, td{
+  border: 1px solid #919394;
+  border-collapse: collapse;
+}
+
+/* head and foot colors*/
+thead, tfoot {background-color: #f2f2f2;}
+
+/* padding of the cells*/
+th, td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* hover highlight table cells*/
+tr:hover {background-color: #d5f007;}
+
+/*table zebra striped
+tr:nth-child(even) {background-color: #f2f2f2;}
+*/
+
+
+/* ======================= body alignment ======================= */
+
+body {
+  text-align: justify;
+}
 
 /* ======================= title slide, cover first slide ======================= */
 
@@ -177,7 +219,7 @@ thead, tfoot, tr:nth-child(even) {background-color: #f2f2f2;}
   text-align: left;
   text-shadow: none;
   padding-top: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   margin-top: 0px;
   margin-bottom: 20px;
   line-height: 1;
@@ -263,17 +305,33 @@ thead, tfoot, tr:nth-child(even) {background-color: #f2f2f2;}
 /* uncomment this for 16:9 aspect ratio */
 /*
 .remark-slide-content {
- padding-left: 80px;  
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  
 }
 */
 
 /* tweak position h1, h2, h3 */
 .remark-slide-content > h1, h2, h3 {
    margin-top: 0px;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
 }
 
 /* =======================  color tags for text ======================= */
+
+.purple{
+  color:#865986;
+}
+
+.orange{
+color:#C04F22;
+}
+
+.blueteal{
+  color:#497AA7;
+}
 
 .brown {
   color: #66010e;
@@ -391,3 +449,5 @@ blockquote {
     left: 0 !important;
   }
 }
+
+
